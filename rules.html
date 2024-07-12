@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAMUN 5.0</title>
+	 <link rel="icon" href="Aamun logo.jpeg" type="image/x-icon">
+	 <link rel="stylesheet" href="css/style.css">
+	  <style>
+      .rules {
+            color: #FFB040;
+            text-align: center;
+			padding:70px;
+			background-color:black;
+        }
+
+        .rules-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            color: #FFB040;
+        }
+		.question {
+            cursor: pointer;
+            padding: 10px;
+            background-color: black;
+            margin-bottom: 5px;
+            position: relative;
+            font-size: 25px;
+        }
+
+        .question::after {
+            content: '🡣';
+            position: absolute;
+            right: 10px;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: black;
+			color:white;
+        }
+
+        .question.active::after {
+            content: '🡡'; 
+        }
+
+    </style>
+</head>
+<body>
+	<div class="black">
+    <div class="logo-container">
+	<img style="height:100px;width:100px"src="Aamun logo.png">
+	 <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="com.html">COMMITTEES</a></li>
+            <li class="dropdown">
+                <a href="reg.html" class="dropbtn">REGISTER</a>
+                <div class="dropdown-content">
+                    <a href="reg.html">How to apply</a>
+                    <a href="delegates or delegataion.html">Delegates/Delegations</a>
+                    <a href="vol.html">Volunteers</a>
+                    <a href="BA.html">Brand Ambassadors</a>
+					<a href="fee.html">Fee Structure</a>
+                </div>
+            </li>
+            <li><a href="team.html">THE TEAM</a></li>
+<li class="dropdown">
+                <a href="info.html" class="dropbtn">INFORMATION</a>
+                <div class="dropdown-content">
+                    <a href="info.html">FAQS</a>
+                    <a href="rules.html">Rules</a>
+                   <a href="itinerary.html">Itinerary</a>
+                    
+                </div>
+            </li>
+            <li><a href="spon.html">SPONSORS</a></li>
+            <li><a href="cont.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+	</div>
+	
+	<div class="rules">
+            <h1>Rules & Regulations</h1>
+            <div class="rules-container">
+                <div class="question" onclick="toggleAnswer(1)">Violence, Harassment, and Discrimination</div>
+                <div class="answer" id="answer1">AAMUN is firmly committed to cultivating an inclusive and secure environment 
+throughout the conference. We are dedicated to ensuring that every delegate, faculty 
+advisor, and staff member feels respected and valued. Discrimination based on sex, 
+sexual orientation, gender identity, or race, which could hinder anyone's complete 
+engagement in any aspect of the conference, will not be tolerated.</div>
+                ----------------------------------------------------------------------------------------------------------------
+
+                <div class="question" onclick="toggleAnswer(2)">Smoking</div>
+                <div class="answer" id="answer2">Delegates are kindly requested to note that smoking or vaping is prohibited for the 
+duration of the conference as LUMS pushes its agenda to make it a smoke-free 
+campus by the end of 2023.</div>
+                  ----------------------------------------------------------------------------------------------------------------
+
+                <div class="question" onclick="toggleAnswer(3)">Dress code</div>
+                <div class="answer" id="answer3">Delegates are requested to observe Western formalwear throughout the duration of 
+this conference. Note however, that the Chairs reserve the special right to enforce a 
+dress code as per their requirement for the committee and the ability to deny a 
+delegate entry into the committee session on violation of the stipulated dress code</div>
+                ----------------------------------------------------------------------------------------------------------------
+
+                <div class="question" onclick="toggleAnswer(4)">Valuable & Personal Items</div>
+                <div class="answer" id="answer4">A4: You can start by learning HTML, CSS, and JavaScript. There are many online resources, tutorials, and courses available for beginners.</div>
+                  ----------------------------------------------------------------------------------------------------------------
+
+        </div>
+	</div>
+	<footer>
+    <div class="footer">
+        <p style="color:#FFB040;font-family:Sans-Serif"><b>Take A Journey With Us On Social Media</b></p>
+        <p style="color:white;font-family:Sans-Serif;font-size:20px">Follow us on social media for updates, deadlines, important information, and other fun content!</p>
+        <a href="https://www.instagram.com/aamun_2023/?igshid=YmMyMTA2M2Y%3D" style="text-decoration: none; color: #FFBF00;">
+            <img style="height:50px;width:50px;padding:20px" src="instalogo.png">
+        </a>
+        <a href="https://www.facebook.com/aamun2022/?locale=hi_IN" style="text-decoration: none; color: #FFBF00;">
+            <img style="height:50px;width:50px;padding:20px" src="fblogo.png">
+        </a>
+		<a href="https://youtube.com/@aamun2023?si=UA_kjNGWhu3M1a7E" style="text-decoration: none;color:#FFBF00;">
+		<img style="height:50px;width:50px;padding:20px" src="ytlogo.png">
+		</a>
+		<a href="https://www.linkedin.com/company/aaamun/" style="text-decoration: none;color:#FFBF00;">
+		<img style="height:50px;width:50px;padding:20px" src="lilogo.png">
+		</a>
+        <hr style="color:#FFB040;">
+        <div class="row">
+            <div class="text">
+                <h4>Aam Admi Model United Nations</h4>
+            </div>
+            <div class="image">
+                <img src="Aamun logo.jpeg" alt="Image">
+            </div>
+        </div>
+    </div>
+</footer>
+    <script>
+        function toggleAnswer(questionNumber) {
+            var answerId = "answer" + questionNumber;
+            var answer = document.getElementById(answerId);
+
+            var question = document.querySelector('.question.active');
+            if (question && question !== null) {
+                question.classList.remove('active');
+                question.querySelector('after').textContent = '🡣';
+                question.querySelector('after').textContent = '🡡';
+            }
+
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+                document.querySelector('.question.active').classList.remove('active');
+                document.querySelector('.question[onclick="toggleAnswer(' + questionNumber + ')"]').classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

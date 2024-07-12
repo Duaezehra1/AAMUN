@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAMUN 5.0</title>
+    <link rel="icon" href="Aamun logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+               .yellow-circle, .third-yellow-circle {
+            width: 200px;
+            height: 200px;
+            background-color:#FFB040;
+            border-radius: 50%;
+            margin-right: 20px;
+            padding: 20px;
+            box-sizing: content-box;
+        }
+
+        .second-yellow-circle {
+            width: 200px;
+            height: 200px;
+            background-color: #FFB040;
+            border-radius: 50%;
+            margin-left: 20px;
+            padding: 20px;
+            box-sizing: content-box;
+        }
+
+        .content-container, .third-content-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text4, .text5, .text6, .text7 {
+            max-width: 600px;
+            color: white;
+            font-family: Sans-Serif;
+        }
+
+        .circle-container, .third-circle-container, .fourth-circle-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align to the left */
+            margin-top: 20px;
+        }
+
+        .second-circle-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Align to the right */
+            margin-top: 20px;
+        }
+
+        .background-section2 {
+            position: relative;
+            height: 400px; 
+        }
+
+        .background-section2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9); /* Adjust the alpha value to control text opacity */
+            padding: 20px;
+            border-radius: 10px;
+            background: none; /* Remove background color */
+        }
+		.background-section3 {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .background-section3 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+        }
+
+        .text-overlay3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            background: none;
+        }
+.seventh-section-container,
+.eighth-section-container,
+.ninth-section-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.large-square {
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+.left-square {
+    background-color:#FFB040;
+}
+
+.right-square {
+    background-color: #FFB040;
+    margin-left: 30px;
+}
+
+.text10,
+.text11,
+.text12 {
+    max-width: 600px;
+    color: white;
+    font-family: Sans-Serif;
+}
+
+.Learn-more1{
+    background-color: #FFB040;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .circle-container, .second-circle-container, .third-circle-container {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .text4, .text5, .text6 {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+       
+        .study-guide1, .Learn-more1 {
+            background-color: #FFB040;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img style="height:100px;width:100px" src="Aamun logo.png">
+        <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="com.html">COMMITTEES</a></li>
+            <li class="dropdown">
+                <a href="reg.html" class="dropbtn">REGISTER</a>
+                <div class="dropdown-content">
+                    <a href="reg.html">How to apply</a>
+                    <a href="delegates or delegataion.html">Delegates/Delegations</a>
+                    <a href="vol.html">Volunteers</a>
+                    <a href="BA.html">Brand Ambassadors</a>
+					<a href="fee.html">Fee Structure</a>
+                </div>
+            </li>
+            <li><a href="team.html">THE TEAM</a></li>
+<li class="dropdown">
+                <a href="info.html" class="dropbtn">INFORMATION</a>
+                <div class="dropdown-content">
+                    <a href="info.html">FAQS</a>
+                    <a href="rules.html">Rules</a>
+                   <a href="itinerary.html">Itinerary</a>
+                    
+                </div>
+            </li>
+            <li><a href="spon.html">SPONSORS</a></li>
+            <li><a href="cont.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+	
+        <div class="background-section1"></div>
+        <div class="text4">
+            <p>General Assembly</p>
+            <h5><i>The UN General Assembly (UNGA) is the main policy-making organ of the Organization. Comprising all Member States, it provides a unique forum for multilateral The UN General Assembly (UNGA) is the main policy-making organ of the Organization. Comprising all Member States, it provides a unique forum for multilateral ...</i></h5>
+        </div>
+        <div class="circle-container">
+            <div class="yellow-circle"></div>
+            <div class="text4">
+                <h2>Committee 1</h2><h4 style="color:white">full name of committee</h4>
+                <h3  style="color:white">Committee Description: The Disarmament and International Security Committee (DISEC) is the first committee of the United Nations General Assembly. This committee addresses and deals with issues that are related to disarmament challenges to global security as well as threats to international peace.</h3>
+                <h3  style="color:white">Topic: The XYZ happening in ABC and its Implications for EFG</h3>
+                <h3  style="color:white">Directors: Mr ABC & Ms.DEF (CDs) | Mr. GHI (ACD)</h3>
+                <button class="study-guide1">STUDY GUIDE</button>
+            </div>
+        </div>
+        <hr>
+        <div class="second-circle-container">
+            <div class="text5">
+                <h2>Committee 2</h2><h4 style="color:white">full name of committee</h4>
+                <h3  style="color:white">Committee Description: The Disarmament and International Security Committee (DISEC) is the first committee of the United Nations General Assembly. This committee addresses and deals with issues that are related to disarmament challenges to global security as well as threats to international peace.</h3>
+                <h3  style="color:white">Topic: The XYZ happening in ABC and its Implications for EFG</h3>
+                <h3  style="color:white">Directors: Mr ABC & Ms.DEF (CDs) | Mr. GHI (ACD)</h3>
+                <button class="study-guide1">STUDY GUIDE</button>
+            </div>
+            <div class="second-yellow-circle"></div>
+        </div>
+        <hr>
+        <div class="third-circle-container">
+            <div class="yellow-circle"></div>
+            <div class="text6">
+                <h2>Committee 3</h2><h4 style="color:white">full name of committee</h4>
+                <h3  style="color:white">Committee Description: The Disarmament and International Security Committee (DISEC) is the first committee of the United Nations General Assembly. This committee addresses and deals with issues that are related to disarmament challenges to global security as well as threats to international peace.</h3>
+                <h3  style="color:white">Topic: The XYZ happening in ABC and its Implications for EFG</h3>
+                <h3  style="color:white">Directors: Mr ABC & Ms.DEF (CDs) | Mr. GHI (ACD)</h3>
+                <button class="study-guide1">STUDY GUIDE</button>
+            </div>
+
+			</div>
+			
+        <div class="background-section2">
+            <img src="comm/int committee.jpg">
+            <div class="text-overlay">
+                <p style="color:#FFB040;font-size:55px;font-family:Fantasy">International Committees</p>
+                <h5 style="color:white;"><i>The UN General Assembly (UNGA) is the main policy-making organ of the Organization. Comprising all Member States, it provides a unique forum for multilateral The UN General Assembly (UNGA) is the main policy-making organ of the Organization. Comprising all Member States, it provides a unique forum for multilateral ...</i></h5>
+            </div>
+        </div>
+		 <div class="circle-container">
+            <div class="yellow-circle"></div>
+            <div class="text4">
+                <h2>Committee 1</h2><h4 style="color:white">full name of committee</h4>
+                <h3  style="color:white">Committee Description: The Disarmament and International Security Committee (DISEC) is the first committee of the United Nations General Assembly. This committee addresses and deals with issues that are related to disarmament challenges to global security as well as threats to international peace.</h3>
+                <h3  style="color:white">Topic: The XYZ happening in ABC and its Implications for EFG</h3>
+                <h3  style="color:white">Directors: Mr ABC & Ms.DEF (CDs) | Mr. GHI (ACD)</h3>
+                <button class="study-guide1">STUDY GUIDE</button>
+            </div>
+        </div>
+        <hr>
+        <div class="second-circle-container">
+            <div class="text5">
+                <h2>Committee 2</h2><h4 style="color:white">full name of committee</h4>
+                <h3  style="color:white">Committee Description: The Disarmament and International Security Committee (DISEC) is the first committee of the United Nations General Assembly. This committee addresses and deals with issues that are related to disarmament challenges to global security as well as threats to international peace.</h3>
+                <h3  style="color:white">Topic: The XYZ happening in ABC and its Implications for EFG</h3>
+                <h3  style="color:white">Directors: Mr ABC & Ms.DEF (CDs) | Mr. GHI (ACD)</h3>
+                <button class="study-guide1">STUDY GUIDE</button>
+            </div>
+            <div class="second-yellow-circle"></div>
+        </div>
+        <hr>
+        <div class="third-circle-container">
+            <div class="yellow-circle"></div>
+            <div class="text6">
+                <h2>Committee 3</h2><h4 style="color:white">full name of committee</h4>
+                <h3  style="color:white">Committee Description: The Disarmament and International Security Committee (DISEC) is the first committee of the United Nations General Assembly. This committee addresses and deals with issues that are related to disarmament challenges to global security as well as threats to international peace.</h3>
+                <h3  style="color:white">Topic: The XYZ happening in ABC and its Implications for EFG</h3>
+                <h3  style="color:white">Directors: Mr ABC & Ms.DEF (CDs) | Mr. GHI (ACD)</h3>
+                <button class="study-guide1">STUDY GUIDE</button>
+				
+            </div>
+			</div>
+			<hr>
+ <div class="background-section3">
+        <img src="comm/delegate resource.jpg" alt="Background Image">
+        <div class="text-overlay3">
+            <p style="color:#FFB040; font-size: 55px; font-family: Fantasy">Delegate Resources</p>
+            <h5 style="color: white;"><i>Empower your diplomatic journey with insightful delegate resources designed to enhance your experience at Aam Admi Model United Nations.</i></h5>
+		</div>
+		</div>
+		 <div class="circle-container">
+            <div class="yellow-circle"></div>
+            <div class="text4">
+                <h2>Committee 1</h2><h4 style="color:white">full name of committee</h4>
+                <h3  style="color:white">Committee Description: The Disarmament and International Security Committee (DISEC) is the first committee of the United Nations General Assembly. This committee addresses and deals with issues that are related to disarmament challenges to global security as well as threats to international peace.</h3>
+                <h3  style="color:white">Topic: The XYZ happening in ABC and its Implications for EFG</h3>
+                <h3  style="color:white">Directors: Mr ABC & Ms.DEF (CDs) | Mr. GHI (ACD)</h3>
+                <button class="Learn-more1">Learn More</button>
+            </div>
+        </div>
+        <hr>
+        <div class="second-circle-container">
+            <div class="text5">
+                <h2>Committee 2</h2><h4 style="color:white">full name of committee</h4>
+                <h3  style="color:white">Committee Description: The Disarmament and International Security Committee (DISEC) is the first committee of the United Nations General Assembly. This committee addresses and deals with issues that are related to disarmament challenges to global security as well as threats to international peace.</h3>
+                <h3  style="color:white">Topic: The XYZ happening in ABC and its Implications for EFG</h3>
+                <h3  style="color:white">Directors: Mr ABC & Ms.DEF (CDs) | Mr. GHI (ACD)</h3>
+                <button class="Learn-more1">Learn More</button>
+            </div>
+            <div class="second-yellow-circle"></div>
+        </div>
+        <hr>
+        <div class="third-circle-container">
+            <div class="yellow-circle"></div>
+            <div class="text6">
+                <h2>Committee 3</h2><h4 style="color:white">full name of committee</h4>
+                <h3  style="color:white">Committee Description: The Disarmament and International Security Committee (DISEC) is the first committee of the United Nations General Assembly. This committee addresses and deals with issues that are related to disarmament challenges to global security as well as threats to international peace.</h3>
+                <h3  style="color:white">Topic: The XYZ happening in ABC and its Implications for EFG</h3>
+                <h3  style="color:white">Directors: Mr ABC & Ms.DEF (CDs) | Mr. GHI (ACD)</h3>
+                <button class="Learn-more1">Learn More</button>
+            </div>
+			</div>
+			<hr>
+			
+        <footer>
+            <div class="footer">
+                <p style="color:#FFB040;font-family:Sans-Serif"><b>Take A Journey With Us On Social Media</b></p>
+                <p style="color:white;font-family:Sans-Serif;font-size:20px">Follow us on social media for updates, deadlines, important information, and other fun content!</p>
+                <a href="https://www.instagram.com/aamun_2023/?igshid=YmMyMTA2M2Y%3D" style="text-decoration: none; color: #FFBF00;">
+                    <img style="height:50px;width:50px;padding:20px" src="instalogo.png">
+                </a>
+                <a href="https://www.facebook.com/aamun2022/?locale=hi_IN" style="text-decoration: none; color: #FFBF00;">
+                    <img style="height:50px;width:50px;padding:20px" src="fblogo.png">
+                </a>
+                <a href="https://youtube.com/@aamun2023?si=UA_kjNGWhu3M1a7E" style="text-decoration: none;color:#FFBF00;">
+                    <img style="height:50px;width:50px;padding:20px" src="ytlogo.png">
+                </a>
+                <a href="https://www.linkedin.com/company/aaamun/" style="text-decoration: none;color:#FFBF00;">
+                    <img style="height:50px;width:50px;padding:20px" src="lilogo.png">
+                </a>
+                <hr style="color:#FFB040;">
+                <div class="row">
+                    <div class="text">
+                        <h4>Aam Admi Model United Nations</h4>
+                    </div>
+                    <div class="image">
+                        <img src="Aamun logo.jpeg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+        
+        </script>
+    </body>
+</html>

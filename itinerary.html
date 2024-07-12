@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAMUN 5.0</title>
+	 <link rel="icon" href="Aamun logo.jpeg" type="image/x-icon">
+	 <link rel="stylesheet" href="css/style.css">
+	  <style>
+        .itinerary {
+            color: #FFB040;
+            text-align: center;
+            padding: 70px;
+            background-color: black;
+            margin: 0;
+			
+        }
+ 
+       .slide h2{
+	   color:#FFB040;
+	  font-size:35px;
+	   
+	   
+	   }
+
+       
+       .slideshow-container {
+            position: relative;
+            max-width: 1000px;
+            margin: auto;
+            
+        }
+
+       
+
+        .arrow1 {
+            position: absolute;
+            top: 50%;
+            
+            font-size: 24px;
+            
+            color: #FFB040;
+            border: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        #prev {
+            left: 10px;
+        }
+
+        #next {
+            right: 10px;
+        }
+
+        .arrow1:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+	
+	<div class="black">
+    <div class="logo-container">
+	<img style="height:100px;width:100px"src="Aamun logo.png">
+	 <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="com.html">COMMITTEES</a></li>
+            <li class="dropdown">
+                <a href="reg.html" class="dropbtn">REGISTER</a>
+                <div class="dropdown-content">
+                    <a href="reg.html">How to apply</a>
+                    <a href="delegates or delegataion.html">Delegates/Delegations</a>
+                    <a href="vol.html">Volunteers</a>
+                    <a href="BA.html">Brand Ambassadors</a>
+					<a href="fee.html">Fee Structure</a>
+                </div>
+            </li>
+            <li><a href="team.html">THE TEAM</a></li>
+<li class="dropdown">
+                <a href="info.html" class="dropbtn">INFORMATION</a>
+                <div class="dropdown-content">
+                    <a href="info.html">FAQS</a>
+                    <a href="rules.html">Rules</a>
+                   <a href="itinerary.html">Itinerary</a>
+                    
+                </div>
+            </li>
+            <li><a href="spon.html">SPONSORS</a></li>
+            <li><a href="cont.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+	</div>
+	<div class="itinerary">
+            <h1>Itinerary</h1>
+	
+	</div>
+    <div class="slideshow-container">
+        <div class="slide">
+            <h2>Day 1</h2>
+            <p>Event 1 details for Day 1...</p>
+        </div>
+        <div class="slide">
+            <h2>Day 2</h2>
+            <p>Event 2 details for Day 2...</p>
+        </div>
+        <div class="slide">
+            <h2>Day 3</h2>
+            <p>Event 3 details for Day 3...</p>
+        </div>
+
+       
+
+        <button class="arrow1" id="prev" onclick="changeSlide(-1)">‹</button>
+        <button class="arrow1" id="next" onclick="changeSlide(1)">›</button>
+    </div>
+
+    
+	<footer>
+    <div class="footer">
+        <p style="color:#FFB040;font-family:Sans-Serif"><b>Take A Journey With Us On Social Media</b></p>
+        <p style="color:white;font-family:Sans-Serif;font-size:20px">Follow us on social media for updates, deadlines, important information, and other fun content!</p>
+        <a href="https://www.instagram.com/aamun_2023/?igshid=YmMyMTA2M2Y%3D" style="text-decoration: none; color: #FFBF00;">
+            <img style="height:50px;width:50px;padding:20px" src="instalogo.png">
+        </a>
+        <a href="https://www.facebook.com/aamun2022/?locale=hi_IN" style="text-decoration: none; color: #FFBF00;">
+            <img style="height:50px;width:50px;padding:20px" src="fblogo.png">
+        </a>
+		<a href="https://youtube.com/@aamun2023?si=UA_kjNGWhu3M1a7E" style="text-decoration: none;color:#FFBF00;">
+		<img style="height:50px;width:50px;padding:20px" src="ytlogo.png">
+		</a>
+		<a href="https://www.linkedin.com/company/aaamun/" style="text-decoration: none;color:#FFBF00;">
+		<img style="height:50px;width:50px;padding:20px" src="lilogo.png">
+		</a>
+        <hr style="color:#FFB040;">
+        <div class="row">
+            <div class="text">
+                <h4>Aam Admi Model United Nations</h4>
+            </div>
+            <div class="image">
+                <img src="Aamun logo.jpeg" alt="Image">
+            </div>
+        </div>
+    </div>
+</footer>
+    <script>
+        let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    showSlide(currentIndex);
+
+    function changeSlide(direction) {
+        currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+        showSlide(currentIndex);
+    }
+
+    function showSlide(index) {
+        for (let i = 0; i < totalSlides; i++) {
+            slides[i].style.display = 'none';
+        }
+
+        slides[index].style.display = 'block';
+    }
+    </script>
+</body>
+</html>

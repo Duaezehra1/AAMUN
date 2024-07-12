@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAMUN 5.0</title>
+	 <link rel="icon" href="Aamun logo.jpeg" type="image/x-icon">
+	 <link rel="stylesheet" href="css/style.css">
+	 <style>
+	 .button-container {
+            text-align: center;
+			background:black;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #FFB040;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:orange;
+        }
+	  #timer {
+	  background:black;
+            text-align: center;
+            font-size: 100px;
+            margin-bottom: 20px;
+			margin:20px;
+			color:#FFB040;
+			padding:10px;
+        }
+		.Register1{
+		background:black;
+		text-align:Center;
+		color:#FFB040;
+		font-size:30px;
+		}
+		
+		
+		
+		.del-container {
+            text-align: center;
+			background:black;
+        }
+
+        .del-container a {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 28px;
+            text-decoration: none;
+            background-color:#FFB040;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .del-container a:hover {
+            background-color: orange;
+        }
+		
+		.black{
+		background-color:black;
+		}
+		
+	 </style>
+</head>
+<body>
+	<div class="black">
+    <div class="logo-container">
+	<img style="height:100px;width:100px"src="Aamun logo.png">
+	 <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="com.html">COMMITTEES</a></li>
+            <li class="dropdown">
+                <a href="reg.html" class="dropbtn">REGISTER</a>
+                <div class="dropdown-content">
+                    <a href="reg.html">How to apply</a>
+                    <a href="delegates or delegataion.html">Delegates/Delegations</a>
+                    <a href="vol.html">Volunteers</a>
+                    <a href="BA.html">Brand Ambassadors</a>
+					<a href="fee.html">Fee Structure</a>
+                </div>
+            </li>
+            <li><a href="team.html">THE TEAM</a></li>
+<li class="dropdown">
+                <a href="info.html" class="dropbtn">INFORMATION</a>
+                <div class="dropdown-content">
+                    <a href="info.html">FAQS</a>
+                    <a href="rules.html">Rules</a>
+                   <a href="itinerary.html">Itinerary</a>
+                    
+                </div>
+            </li>
+            <li><a href="spon.html">SPONSORS</a></li>
+            <li><a href="cont.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+	</div>
+	
+		<div class="container">
+        <div class="text1">STEP <b>01</b>:</div>
+        <div class="text2">Click on the button below</div>
+    </div>
+	<div class="container">
+        <div class="text1">STEP <b>02</b>:</div>
+        <div class="text2">Fill the form</div>
+    </div>
+	<div class="container">
+        <div class="text1">STEP <b>03</b>:</div>
+        <div class="text2">Wait for the allotment email</div>
+    </div>
+	<div class="container">
+        <div class="text1">STEP <b>04</b>:</div>
+        <div class="text2">Pay the amount</div>
+    </div>
+	<div class="container">
+        <div class="text1">STEP <b>05</b>:</div>
+        <div class="text2">You are Registered!</div>
+		
+    </div>
+	
+	<div class="black"> 
+	<div class="del-container">
+    <a href="delegates or delegataion.html">REGISTER NOW</a>
+	</div>
+	
+	<footer>
+
+    <div class="footer">
+        <p style="color:#FFB040;font-family:Sans-Serif"><b>Take A Journey With Us On Social Media</b></p>
+        <p style="color:white;font-family:Sans-Serif;font-size:20px">Follow us on social media for updates, deadlines, important information, and other fun content!</p>
+        <a href="https://www.instagram.com/aamun_2023/?igshid=YmMyMTA2M2Y%3D" style="text-decoration: none; color: #FFBF00;">
+            <img style="height:50px;width:50px;padding:20px" src="instalogo.png">
+        </a>
+        <a href="https://www.facebook.com/aamun2022/?locale=hi_IN" style="text-decoration: none; color: #FFBF00;">
+            <img style="height:50px;width:50px;padding:20px" src="fblogo.png">
+        </a>
+		<a href="https://youtube.com/@aamun2023?si=UA_kjNGWhu3M1a7E" style="text-decoration: none;color:#FFBF00;">
+		<img style="height:50px;width:50px;padding:20px" src="ytlogo.png">
+		</a>
+		<a href="https://www.linkedin.com/company/aaamun/" style="text-decoration: none;color:#FFBF00;">
+		<img style="height:50px;width:50px;padding:20px" src="lilogo.png">
+		</a>
+        <hr style="color:#FFB040;">
+        <div class="row">
+            <div class="text">
+                <h4>Aam Admi Model United Nations</h4>
+            </div>
+            <div class="image">
+                <img src="Aamun logo.jpeg" alt="Image">
+            </div>
+        </div>
+    </div>
+	</div>
+</footer>
+    <script>
+	
+	
+	 var targetDate = new Date('February 21, 2024 17:30:00').getTime();
+
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = targetDate - now;
+
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds;
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById('timer').innerHTML = 'EXPIRED';
+        }
+    }, 1000);
+	
+  function redirectToGoogleForm(formName) {
+        
+        var formUrls = {
+            'form1': 'https://docs.google.com/forms/d/e/your_form_id_1/viewform',
+            'form2': 'https://docs.google.com/forms/d/e/your_form_id_2/viewform'
+        };
+
+        var selectedFormUrl = formUrls[formName];
+
+        if (selectedFormUrl) {
+            
+            window.location.href = selectedFormUrl;
+        } else {
+            console.error('Form URL not found for:', formName);
+        }
+    }
+    
+	
+    </script>
+	</body>
+</html>
